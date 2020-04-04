@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+        <script>
+            function greet()
+            {
+                let name = document.querySelector('#name').value;
+                document.querySelector('#result').innerHTML = "Hello, " + name + "!\n";
+                document.getElementById('form').style.display = "none";
+            }
+        </script>
+        <title>Home</title>
+    </head>
+    <body>
+        <header class="masthead mb-auto">
+            <div class = "inner">
+                <h1 class="masthead-brand">The Home Page</h1>
+                <nav class='nav nav-masthead justify-content-center'>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="work.html">Work</a>
+                    </li>
+                  </ul>
+                </nav>
+        </div>
+        </header>
+        <div>
+            <form id="form" onsubmit="greet(); return false;">
+                <input type="text" id="name">
+                <input type="submit">
+            </form>
+            <p id="result" style="font-size: 50px; color: white;">
+            </p>
+        </div>
+        <footer class="mastfoot mt-auto">
+                <p>Created by raam</p>
+        </footer>
+    </body>
+</html>

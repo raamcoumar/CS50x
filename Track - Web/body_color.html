@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello!</title>
+    </head>
+    <body>
+        <button id="red">Red</button>
+        <button id="blue">Blue</button>
+        <button id="green">Green</button>
+    </body>
+    <script>
+        let body = document.querySelector('body');
+        document.querySelector("#red").onclick = function() {
+            body.style.backgroundColor = 'red';
+        }
+        document.querySelector("#blue").onclick = function() {
+            body.style.backgroundColor = 'blue';
+        }
+        document.querySelector("#green").onclick = function() {
+            body.style.backgroundColor = 'green';
+        }
+    </script>
+</html>
