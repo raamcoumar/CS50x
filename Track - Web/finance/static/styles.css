@@ -45,3 +45,31 @@ main img
     /* constrain images on small screens */
     max-width: 100%;
 }
+
+.nav-link {
+  color: white;
+  background-color: yellow;
+  border-right: 2pt solid black;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: blue;
+}
+
+.ht-min {
+  min-height: 300px;
+}
+
+.to-center {
+  margin: 20%;
+}
+
+/* m */
+.table > thead > tr > th {
+    border-bottom-color: #ccc;
+}
+
+th, td {
+    white-space: nowrap;
+}
